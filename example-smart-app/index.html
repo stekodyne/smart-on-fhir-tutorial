@@ -24,8 +24,8 @@
     <script>
       extractData().then(
         // Display token information.
-        function(p) {
-          drawVisualization(p);
+        function(token) {
+          display(token);
         },
 
         //Display 'Failed to call FHIR Service' if extractData failed

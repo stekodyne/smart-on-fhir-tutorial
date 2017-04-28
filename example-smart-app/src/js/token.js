@@ -9,7 +9,7 @@
 
     function onReady(smart)  {
       if (smart) {
-        ret.resolve(FhirClient);
+        ret.resolve(smart);
       } else {
         onError();
       }
@@ -20,10 +20,10 @@
 
   };
 
-  window.drawVisualization = function(p) {
+  window.display = function(smart) {
     $('#holder').show();
     $('#loading').hide();
-    $('#token').html(FhirClient);
+    $('#token').html(smart);
   };
 
 })(window);
